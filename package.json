@@ -1,6 +1,6 @@
 {
   "name": "randomizedid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "With this API you can get custom and random identifiers for your data with no length limit and other interesting features.",
   "main": "index.js",
   "scripts": {
