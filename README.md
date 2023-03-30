@@ -37,6 +37,9 @@ This returns: '71IhP-blAzp-QRhLA-qxOuB-DRKaH'
 
 ## Social Media
 Follow me (:
-IG [@jarregui92](https://www.instagram.com/jarregui92)
+
+Instagram [@jarregui92](https://www.instagram.com/jarregui92)
+
+Linkedin [@jarregui92](https://www.linkedin.com/in/jarregui92/)
 
 Github [@jarregui92](https://github.com/jarregui92)
