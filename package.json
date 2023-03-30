@@ -1,0 +1,19 @@
+{
+  "name": "randomizedid",
+  "version": "1.0.0",
+  "description": "With this API you can get custom and random identifiers for your data with no length limit and other interesting features.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarregui92/randomizedid.git"
+  },
+  "author": "Julian Arregui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jarregui92/randomizedid/issues"
+  },
+  "homepage": "https://github.com/jarregui92/randomizedid#readme"
+}
