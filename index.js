@@ -1,31 +1,23 @@
 const randomizedid = (length = 10, split = 0) => {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    const arrString = characters.split('');
-    const mezcla = [];
-    let output = [];
-    let resultado;
+    let resultado = '';
+    
     for (let i = 0; i < length; i++) {
-        mezcla.push(arrString[Math.floor(Math.random() * arrString.length)])
-    }
-    resultado = mezcla.join('');
-
-    if (split != 0) {
-        for (let i = 0; i <= resultado.length; i++) {
-            let initIndex = i;
-            let endIndex = i + split;
-            output.push(resultado.substring(initIndex, endIndex));
-            i = endIndex
-        }
-        output = output.join('-');
-        if(output.slice(-1) == '-'){
-            output = output.substring(0, output.length -1);
-            output = output+arrString[Math.floor(Math.random() * arrString.length)]
-        }
-    }else{
-        output = resultado;
+      resultado += characters.charAt(Math.floor(Math.random() * characters.length));
     }
     
-    return output
-};
-
-module.exports = randomizedid;
+    if (split > 0) {
+      const output = [];
+      for (let i = 0; i < resultado.length; i += split) {
+        output.push(resultado.substring(i, i + split));
+      }
+      resultado = output.join('-');
+      if (resultado.endsWith('-')) {
+        resultado = resultado.slice(0, -1) + characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+    }
+  
+    return resultado;
+  };
+  
+  module.exports = randomizedid;
