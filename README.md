@@ -36,6 +36,8 @@ randimizedid() // ⇨ 'xIHJfPrCEm' To get 10 random characters
 randimizedid(25)// ⇨ 'LUuBXRtyO0APurPL52hoU45D7' To get customized length of characters
 
 randomizedid(29, 5) // ⇨ '71IhP-blAzp-QRhLA-qxOuB-DRKaH' To get customized lenght of characters and interspersed by dashes every n (second argument) characters
+
+randomizedid(29, 5, '_') // ⇨ '71IhP_blAzp_QRhLA_qxOuB_DRKaH' "e added a third parameter that serves to select the separator of the string, which can be either '-' or '_'
 ```
 
 ## Social Media
